@@ -1,0 +1,165 @@
+
+@left-gutter-color: #6ff;
+@right-gutter-color: #dff;
+
+.typography {
+  h1 {
+    font-size: 2.5rem;
+  }
+
+  h2 {
+    font-size: 2rem;
+  }
+
+  h3 {
+    font-size: 1.5rem;
+  }
+
+  h4 {
+    font-size: 1rem;
+  }
+
+  p, blockquote, pre, ul, ol {
+    margin: 0 0 1rem 0;
+  }
+
+  ul, ol {
+    margin-left:2em;
+  }
+
+  h1, h2, h3, h4, h5, h6 {
+    margin: 0 0 1rem 0;
+  }
+}
+
+.container-960 {
+  max-width:960px;
+  margin: 0 auto;
+}
+
+.grid {
+
+  .row-start {
+    //margin: 0 -1rem 0 -1rem;
+  }
+
+  .row {
+    overflow: auto;
+    width: auto;
+  }
+
+  .col-12 {
+    width:100%;
+  }
+
+  .col-11 {
+    width:83.33%;
+  }
+
+  .col-10 {
+    width:75%;
+  }
+
+  .col-9 {
+    width:75%;
+  }
+
+  .col-8 {
+    width:66.66%;
+  }
+
+  .col-7 {
+    width:58.33;
+  }
+
+  .col-6 {
+    width:50%;
+  }
+
+  .col-5 {
+    width:41.66%;
+  }
+
+  .col-4 {
+    width:33.33%;
+  }
+
+  .col-3 {
+    width:25%;
+  }
+
+  .col-2 {
+    width:16.66%;
+  }
+
+  .col-1 {
+    width:8.33%;
+  }
+
+  .gutter(@size) {
+    padding-left:@size;
+    padding-right:@size;
+  }
+
+  [class^='col-'] {
+    float:left;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+  }
+
+  .gut-0_5 [class^='col-'] {
+    .gutter(0.5rem);
+  }
+
+  .gut-1 [class^='col-'] {
+    .gutter(1rem);
+  }
+
+  .gut-1_5 [class^='col-'] {
+    .gutter(1.5rem);
+  }
+
+  .gut-2 [class^='col-'] {
+    .gutter(2rem);
+  }
+
+  .pad-0_5[class^='col-'] {
+    padding-left:0.5em;
+    padding-right:0.5em;
+  }
+
+  .pad-1[class^='col-'] {
+    padding-left:1em;
+    padding-right:1em;
+  }
+
+  .pad-1_5[class^='col-'] {
+    padding-left:1.5em;
+    padding-right:1.5em;
+  }
+
+  .pad-2[class^='col-'] {
+    padding-left:2em;
+    padding-right:2em;
+  }
+
+  /*
+  [class^=col-]:last-child {
+    border-right:0;
+  }
+
+  [class^=col-]:first-child {
+    border-left:0;
+  }*/
+
+  @media (max-width: 650px) {
+    [class^=col-] {
+      float:none;
+      width:auto;
+      border-right:0 !important;
+      border-left:0 !important;
+    }
+  }
+
+}

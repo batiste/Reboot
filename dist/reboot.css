@@ -1,0 +1,131 @@
+.typography h1 {
+  font-size: 2.5rem;
+}
+.typography h2 {
+  font-size: 2rem;
+}
+.typography h3 {
+  font-size: 1.5rem;
+}
+.typography h4 {
+  font-size: 1rem;
+}
+.typography p,
+.typography blockquote,
+.typography pre,
+.typography ul,
+.typography ol {
+  margin: 0 0 1rem 0;
+}
+.typography ul,
+.typography ol {
+  margin-left: 2em;
+}
+.typography h1,
+.typography h2,
+.typography h3,
+.typography h4,
+.typography h5,
+.typography h6 {
+  margin: 0 0 1rem 0;
+}
+.container-960 {
+  max-width: 960px;
+  margin: 0 auto;
+}
+.grid {
+  /*
+  [class^=col-]:last-child {
+    border-right:0;
+  }
+
+  [class^=col-]:first-child {
+    border-left:0;
+  }*/
+}
+.grid .row {
+  overflow: auto;
+  width: auto;
+}
+.grid .col-12 {
+  width: 100%;
+}
+.grid .col-11 {
+  width: 83.33%;
+}
+.grid .col-10 {
+  width: 75%;
+}
+.grid .col-9 {
+  width: 75%;
+}
+.grid .col-8 {
+  width: 66.66%;
+}
+.grid .col-7 {
+  width: 58.33;
+}
+.grid .col-6 {
+  width: 50%;
+}
+.grid .col-5 {
+  width: 41.66%;
+}
+.grid .col-4 {
+  width: 33.33%;
+}
+.grid .col-3 {
+  width: 25%;
+}
+.grid .col-2 {
+  width: 16.66%;
+}
+.grid .col-1 {
+  width: 8.33%;
+}
+.grid [class^='col-'] {
+  float: left;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+.grid .gut-0_5 [class^='col-'] {
+  padding-left: 0.5rem;
+  padding-right: 0.5rem;
+}
+.grid .gut-1 [class^='col-'] {
+  padding-left: 1rem;
+  padding-right: 1rem;
+}
+.grid .gut-1_5 [class^='col-'] {
+  padding-left: 1.5rem;
+  padding-right: 1.5rem;
+}
+.grid .gut-2 [class^='col-'] {
+  padding-left: 2rem;
+  padding-right: 2rem;
+}
+.grid .pad-0_5[class^='col-'] {
+  padding-left: 0.5em;
+  padding-right: 0.5em;
+}
+.grid .pad-1[class^='col-'] {
+  padding-left: 1em;
+  padding-right: 1em;
+}
+.grid .pad-1_5[class^='col-'] {
+  padding-left: 1.5em;
+  padding-right: 1.5em;
+}
+.grid .pad-2[class^='col-'] {
+  padding-left: 2em;
+  padding-right: 2em;
+}
+@media (max-width: 650px) {
+  .grid [class^=col-] {
+    float: none;
+    width: auto;
+    border-right: 0 !important;
+    border-left: 0 !important;
+  }
+}
