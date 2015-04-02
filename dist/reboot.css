@@ -1,3 +1,50 @@
+/**
+ * Eric Meyer's Reset CSS v2.0 (http://meyerweb.com/eric/tools/css/reset/)
+ * http://cssreset.com
+ */
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
 .typography {
   font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
   line-height: 1.25;
@@ -77,45 +124,45 @@
 .grid .col-12 {
   width: 100%;
 }
-.grid .gut-0_5[class^='col-'],
-.grid .gut-0_5 [class^='col-'] {
-  padding-left: 0.5rem;
-  padding-right: 0.5rem;
+.grid .pad-0_5[class^='col-'],
+.grid .pad-0_5 [class^='col-'] {
+  border-left: 0.5em solid transparent;
+  border-right: 0.5em solid transparent;
 }
-.grid .gut-1[class^='col-'],
-.grid .gut-1 [class^='col-'] {
-  padding-left: 1rem;
-  padding-right: 1rem;
-}
-.grid .gut-1_5[class^='col-'],
-.grid .gut-1_5 [class^='col-'] {
-  padding-left: 1.5rem;
-  padding-right: 1.5rem;
-}
-.grid .gut-2[class^='col-'],
-.grid .gut-2 [class^='col-'] {
-  padding-left: 2rem;
-  padding-right: 2rem;
-}
-.grid .pad-0-5[class^='col-'],
-.grid .pad-0-5 [class^='col-'] {
-  padding-left: 0.5em;
-  padding-right: 0.5em;
+.grid .pad-0_5 .first-row,
+.grid .pad-0_5.first-row {
+  margin-left: -0.5em;
+  margin-right: -0.5em;
 }
 .grid .pad-1[class^='col-'],
 .grid .pad-1 [class^='col-'] {
-  padding-left: 1em;
-  padding-right: 1em;
+  border-left: 1em solid transparent;
+  border-right: 1em solid transparent;
+}
+.grid .pad-1 .first-row,
+.grid .pad-1.first-row {
+  margin-left: -1em;
+  margin-right: -1em;
 }
 .grid .pad-1_5[class^='col-'],
 .grid .pad-1_5 [class^='col-'] {
-  padding-left: 1.5em;
-  padding-right: 1.5em;
+  border-left: 1.5em solid transparent;
+  border-right: 1.5em solid transparent;
+}
+.grid .pad-1_5 .first-row,
+.grid .pad-1_5.first-row {
+  margin-left: -1.5em;
+  margin-right: -1.5em;
 }
 .grid .pad-2[class^='col-'],
 .grid .pad-2 [class^='col-'] {
-  padding-left: 2.5em;
-  padding-right: 2.5em;
+  border-left: 2.5em solid transparent;
+  border-right: 2.5em solid transparent;
+}
+.grid .pad-2 .first-row,
+.grid .pad-2.first-row {
+  margin-left: -2.5em;
+  margin-right: -2.5em;
 }
 .grid [class^='col-'] {
   float: left;
@@ -127,6 +174,5 @@
   .grid [class^=col-] {
     float: none;
     width: auto;
-    padding-left: 0 !important;
   }
 }

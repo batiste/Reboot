@@ -1,3 +1,4 @@
+@import (inline) "dist/reset.css";
 
 @left-gutter-color: #6ff;
 @right-gutter-color: #dff;
@@ -41,10 +42,6 @@
 
 .grid {
 
-  .row-start {
-    //margin: 0 -1rem 0 -1rem;
-  }
-
   .row {
     overflow: auto;
     width: auto;
@@ -58,28 +55,21 @@
     .generate-columns(@n, (@i + 1));
   }
 
-  .gutter(@name, @size) {
-    @n: ~".gut-@{name}";
-    @{n}[class^='col-'], @{n} [class^='col-'] {
-      padding-left:@size;
-      padding-right:@size;
-    }
-  }
-
-  .gutter("0_5", 0.5rem);
-  .gutter("1", 1rem);
-  .gutter("1_5", 1.5rem);
-  .gutter("2", 2rem);
-
   .padding(@name, @size) {
     @n: ~".pad-@{name}";
     @{n}[class^='col-'], @{n} [class^='col-'] {
-      padding-left:@size;
-      padding-right:@size;
+      //padding-left:@size;
+      //padding-right:@size;
+      border-left:@size solid transparent;
+      border-right:@size solid transparent;
+    }
+    @{n} .first-row, @{n}.first-row {
+      margin-left:-@size;
+      margin-right:-@size;
     }
   }
 
-  .padding("0-5", 0.5em);
+  .padding("0_5", 0.5em);
   .padding("1", 1em);
   .padding("1_5", 1.5em);
   .padding("2", 2.5em);
@@ -95,8 +85,6 @@
     [class^=col-] {
       float:none;
       width:auto;
-      padding-left:0 !important;
-      padding-left:0 !important;
     }
   }
 
